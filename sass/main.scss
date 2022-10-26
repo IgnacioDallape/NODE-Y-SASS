@@ -1,9 +1,4 @@
-h1{
-    color: black;
-}
-h2{
-    color: aliceblue;
-}
-header{
-    display: flex;
-}
+
+
+@import "./parciales/header";       /* GRACIAS AL GUION BAJO, ME LO COMPILA SOLO A ESTE MAIN Y DESPUES AL CSS, SI NO, ME HARIA MIL CSS*/
+@import "./parciales/main_content"

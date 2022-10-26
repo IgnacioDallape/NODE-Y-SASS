@@ -1,0 +1,30 @@
+/*  ESTE PARCIAL SE HACE POR BUENA PRACTICA, PARA TENER DIVIDIDOS LAS DISTINTAS SECCIONES, CON EL GUIÓN BAJO LE DOY A ENTENDER AL COMPILADOR QUE ES UN MODULO, UN ARCHIVO PARCIAL, QUE SERA IMPORTADO*/
+
+@import "./variables";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+    color: rgb(195, 155, 155);
+}
+h2{
+    color: aliceblue;
+}
+.header{
+    padding: 3rem;
+    background-image: $gradiente1;
+
+    &__nav{    
+        padding: 1rem;        /*el & reemplaza el selector padre, header en este caso*/
+    }
+    &__list{
+    display: flex;
+    flex-direction: column;
+        &__item{                                             /*aca estando dentro de list, toma los dos selectores padres el &, es decir header__list*/
+            padding: 2rem;
+            font-size: 2rem;
+        }
+    }
+}
